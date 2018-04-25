@@ -1,5 +1,7 @@
+/* Default styles first then media queries */
 html, body {
     background-attachment: fixed;
+    height: unset;
     min-height: 100vh;
 }
 
@@ -18,18 +20,16 @@ md-content {
 }
 
 .add-page .torrent-input-box {
-    width: 500px;
+    width: 75%;
     height: 80px;
-}
-
-.add-page .torrent-input-box md-input-container {
-  width: 100%;
 }
 
 .add-page .torrent-input-box label,
 .add-page .torrent-input-box input {
     text-shadow: none;
-    color: white;
+    color: #FF7043;
+    border-color: #FFAB91;
+    font-size: 14.3pt;
 }
 
 .torrents-page {
@@ -69,7 +69,7 @@ md-content {
 }
 
 .back-button {
-    position: absolute !important;
+    position: absolute;
     top: 20px;
     left: 20px;
     z-index: 3;
@@ -83,4 +83,26 @@ md-content {
 
 .zip-download {
     vertical-align: -13px;
+}
+
+/* Media queries style */
+@media screen and (min-width: 400px)  {
+  .add-page .torrent-input-box {
+      width: 80%;
+  }
+}
+@media all and (min-width: 600px)  {
+  .add-page .torrent-input-box {
+      width: 65%;
+  }
+}
+@media all and (min-width: 1000px) {
+  .add-page .torrent-input-box {
+      width: 50%;
+  }
+}
+@media all and (min-width: 1400px) {
+  .add-page .torrent-input-box {
+      width: 35%;
+  }
 }
