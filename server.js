@@ -14,7 +14,7 @@ var archiver = require('archiver');
 var client, url;
 
 var DIR = os.tmpdir()+'/wtorr-poc';
-var PORT = parseArg('--port') || parseArg('-p') || process.env.PORT || 3000;
+var PORT = parseArg('--port') || parseArg('-p') || process.env.PORT || 5000;
 
 server.listen(PORT);
 app.use(express.static(__dirname + '/public'));
